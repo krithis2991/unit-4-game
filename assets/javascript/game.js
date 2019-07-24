@@ -11,8 +11,9 @@ $(document).ready (function () {
 
     let win = 0;
     let lose = 0;
+    let userScore = 0;
 
-    $("#win").append(win);
+    $("#wins").append(win);
     $("#lose").append(lose);
 
     function wins() {
@@ -87,6 +88,16 @@ $(document).ready (function () {
                 }
                 
     });
+
+    let tensecondsAlert = setTimeout(function() {
+        alert("You only have 30 more seconds to finish the game");
+      }, 10000);
+
+      let windowTimeOut = setTimeout(function() {
+        alert("You have exceeded the time limit");
+        window.location.reload();
+      }, 40000);
+
 });
 
 

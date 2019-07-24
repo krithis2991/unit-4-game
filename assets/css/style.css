@@ -1,0 +1,14 @@
+img {
+    width: 100px;
+    height: 100px;
+}
+#computerScore {
+    background-color: coral;
+    height: 100px;
+}
+#userScore {
+    background-color: aquamarine;
+    height: 100px;
+}
+
+
